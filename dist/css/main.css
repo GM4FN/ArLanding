@@ -1,0 +1,10 @@
+@import "../fonts/Gilroy-Bold.ttf";
+
+@import "../fonts/Gilroy-Regular.ttf";
+
+@import "../fonts/Gilroy-Semibold.ttf";
+
+body {
+  background-color: #000;
+  color: #fff;
+}
