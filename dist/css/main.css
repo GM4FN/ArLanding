@@ -79,59 +79,6 @@ ul {
   src: url("../fonts/Gilroy-Regular.ttf");
 }
 
-.header {
-  padding: 0 calc(50% - 600px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header_elements-group1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header_elements-group1-element {
-  margin-right: 25px;
-}
-
-.header_elements-group1-element:first-of-type {
-  margin-left: 44px;
-}
-
-.header_elements-group1-element:last-of-type {
-  margin-right: 0;
-}
-
-.header_elements-group1-element a {
-  text-transform: uppercase;
-}
-
-.header_elements-group1 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #b5b5b5;
-}
-
-.header_elements-group2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header_elements-group2>.button-all-places:last-of-type {
-  margin-left: 20px;
-}
-
 .button-all-places {
   background-color: #f2994a;
   border: 2px #f2994a solid;
@@ -148,7 +95,163 @@ ul {
 }
 
 .button-all-places:hover {
+  color: #99efd0;
   background-color: rgba(255,255,255,0);
+}
+
+.button-all-places-opacity {
+  background-color: rgba(255,255,255,0);
+  border: 2px #f2994a solid;
+  color: #f2994a;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 7px;
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+  width: 7em;
+  height: 2.4em;
+}
+
+.button-all-places-opacity:hover {
+  color: #99efd0;
+  background-color: #f2994a;
+}
+
+.header {
+  padding: 0 calc(50% - 600px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__elements-group1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__elements-group1-element {
+  margin-right: 25px;
+}
+
+.header__elements-group1-element:first-of-type {
+  margin-left: 44px;
+}
+
+.header__elements-group1-element:last-of-type {
+  margin-right: 0;
+}
+
+.header__elements-group1-element a {
+  text-transform: uppercase;
+}
+
+.header__elements-group1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #b5b5b5;
+}
+
+.header__elements-group2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__elements-group2>.button-all-places:last-of-type {
+  margin-left: 20px;
+}
+
+.reasons {
+  padding: 0 calc(50% - 600px);
+  background: url("../img/bg/Reasons_bg.png") top right/auto no-repeat border-box border-box;
+  margin-top: 8.4em;
+}
+
+.reasons__head-text {
+  font-family: GilroyBold;
+  font-size: 2.8em;
+  color: #99efd0;
+  max-width: 50vw;
+  margin-bottom: .3em;
+}
+
+.reasons__text {
+  color: #8476aa;
+  font-size: 1.2em;
+}
+
+.reasons__buttons {
+  margin-top: 2.5em;
+  margin-bottom: 3.2em;
+}
+
+.reasons__buttons .button-all-places,
+.reasons__buttons .button-all-places-opacity {
+  width: 9em;
+}
+
+.reasons__buttons .button-all-places:not(.button-all-places-opacity),
+.reasons__buttons .button-all-places-opacity:not(.button-all-places-opacity) {
+  margin-right: 2em;
+}
+
+.reasons__video-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reasons__video-texts-harder {
+  color: #8476aa;
+}
+
+.reasons__video-texts-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.reasons__video-texts-preview {
+  color: #6d6d78;
+  cursor: pointer;
+}
+
+.reasons__video-texts-img {
+  width: 8.7em;
+  height: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(4,13,62,.45);
+  border-radius: 10px;
+  margin-right: 1em;
+  cursor: pointer;
 }
 
 * {
