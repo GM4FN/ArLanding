@@ -115,7 +115,7 @@ ul {
 }
 
 .button-all-places-opacity:hover {
-  color: #99efd0;
+  color: #000;
   background-color: #f2994a;
 }
 
@@ -153,6 +153,15 @@ ul {
 
 .header__elements-group1-element a {
   text-transform: uppercase;
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+  border-radius: 7px;
+}
+
+.header__elements-group1-element a:hover {
+  background-color: #f2994a;
+  color: #000;
 }
 
 .header__elements-group1 ul {
@@ -176,6 +185,7 @@ ul {
   padding: 0 calc(50% - 600px);
   background: url("../img/bg/Reasons_bg.png") top right/auto no-repeat border-box border-box;
   margin-top: 8.4em;
+  padding-bottom: 8em;
 }
 
 .reasons__head-text {
@@ -212,6 +222,10 @@ ul {
   display: flex;
 }
 
+.reasons__video-texts a {
+  margin-right: 1em;
+}
+
 .reasons__video-texts-harder {
   color: #8476aa;
 }
@@ -228,7 +242,7 @@ ul {
       justify-content: space-around;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: start;
+          align-items: flex-start;
 }
 
 .reasons__video-texts-preview {
@@ -248,10 +262,67 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(4,13,62,.45);
+  background: url("https://i.ytimg.com/vi/m8_9_9mad6w/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZTj3AU_SyakYTj3r7WLQ-DFBoYw") center center/auto no-repeat border-box border-box;
   border-radius: 10px;
-  margin-right: 1em;
   cursor: pointer;
+}
+
+.your-choice {
+  padding: 0 calc(50% - 600px);
+  background: url("../img/bg/Choice_bg.png") top center/auto no-repeat border-box border-box;
+}
+
+.your-choice__logos-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 6.7em;
+}
+
+.your-choice__logo-company {
+  -webkit-filter: drop-shadow(8px 10px 1px #3B1D60);
+          filter: drop-shadow(8px 10px 1px #3B1D60);
+}
+
+.your-choice__head {
+  font-family: GilroyBold;
+  color: #99efd0;
+  font-size: 2.6em;
+  text-align: center;
+}
+
+.your-choice__subhead {
+  margin-top: .7em;
+  margin-bottom: 3.1em;
+  text-align: center;
+  color: #8476aa;
+}
+
+.your-choice__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.2em 3.1em;
+}
+
+.your-choice__feature {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: .8em 0;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+.your-choice__feature-head {
+  color: #99efd0;
+  font-size: 18px;
+}
+
+.your-choice__feature-text {
+  color: #8476aa;
+  font-size: 14px;
+  grid-column: 2/3;
 }
 
 * {
