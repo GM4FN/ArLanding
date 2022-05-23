@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.min.css" />
+    <script src="js/index.js" async></script>
     <title>ArLanding</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
       <li class="header__elements-group1-element"><a href="#">about</a></li>
       <li class="header__elements-group1-element"><a href="#">gallery</a></li>
       <li class="header__elements-group1-element"><a href="#">pricing</a></li>
-      <li class="header__elements-group1-element"><a href="#">faq</a></li>
+      <li class="header__elements-group1-element"><a href="#faq">faq</a></li>
       <li class="header__elements-group1-element"><a href="#">benefits</a></li>
     </ul>
   </div>
@@ -34,10 +35,10 @@
       and start to get back in <br />
       the business
     </h1>
-    <span class="reasons__text">
+    <div class="reasons__text">
       The harder you work for something, the greater you'll feel <br />
       when you achieve it.
-    </span>
+    </div>
     <div class="reasons__buttons">
       <button class="button-all-places">Learn More</button>
       <button class="button-all-places-opacity">Demo</button>
@@ -168,6 +169,7 @@
 </section>
 
       <section class="property">
+  <a href="#" name="faq"></a>
   <div class="property__wrapper-text">
     <h2 class="property__head">
       Invest property for <br />
@@ -190,6 +192,7 @@
 </section>
 
 <section class="information">
+  
   <img
     src="/img/PropertyInformation/Information_img.png"
     alt="People Meeting"
@@ -251,7 +254,9 @@
   </div>
 </section>
 
-<footer class="footer">
+<footer class="footer" name="footer">
+  <!-- Якорь в футт -->
+  <a href="#" name="faq"></a>
   <div class="footer__group-of-contacts">
     <div class="footer__name-company">ARShakir</div>
     <ul class="footer__contacts">
